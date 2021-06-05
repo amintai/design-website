@@ -54,7 +54,7 @@
 	border-bottom: 5px solid #999 ;
 	border-radius: 5px;
 	color: white;
-	transition: 1s ease;
+	/* transition: 1s ease; */
 }
 .active {
 	background-color: #2C343C;
@@ -74,11 +74,14 @@
 	vertical-align: middle;
 	margin-top: 100px;
 	height: 550px;
+	width: 100%;
 	/* display: none; */
 }
 
 .slideshow-container{
-	max-width: 1400px;
+	width: 100%;
+
+	/* max-width: 1400px; */
 	/* position:relative; */
 	margin:auto;
 	height: 100px;
@@ -190,6 +193,7 @@
 	background-color: #efefef;
 	height: 700px;
 	text-align: center;
+	width: 100%;
 	padding-top: 40px;
 }
 .service-container img{
@@ -217,6 +221,7 @@
 	/* -webkit-flex-flow: row wrap; */
 	flex-flow: row wrap;
 	height: 450px;
+	width: 100%;
 }
 .circle {
 	background-color: white;
@@ -266,6 +271,7 @@
 	font-size: 15px;
 	color: #313a42;
 	font-weight: bold;
+	cursor: pointer;
 }
 .circle-button:hover{
 	background-color: #59A3FC;
@@ -278,6 +284,7 @@
 	margin-top: 190px;
 	background-color: #DAD9DA;
 	color: #313a42;
+	cursor: pointer;
 	border: none;
 	font-size: 15px;
 	box-shadow: 2px 2px 2px 2px #ccc;
@@ -295,6 +302,7 @@
 	background-image: url("./../images/serfoot.png");
 	/* background-color: #2a323a; */
 	 display: flex;
+	 width: 100%;
 	justify-content: center;
 	align-items: flex-start; 
 	height: 230px;
@@ -336,6 +344,7 @@
 
 .project-container {
 	height: 1050px;
+	width: 100%;
 	text-align: center;
 }
 .project-container h1{
@@ -390,6 +399,7 @@
 }
 
 .project-images{
+	
 	margin-top: 20px;
 	display: inline-grid;
 	grid-gap: 30px;
@@ -397,8 +407,10 @@
 	/* padding-right:0px;	 */
 	/* align-items: stretch; */
 	/* justify-content: center; */
+
 	
 }
+
 .project-images img {
 	/* padding-left: 20x; */
 	padding-top:0px;
@@ -407,6 +419,16 @@
 	width: 280px;
 	box-shadow: 0 3px 0 0 #ccc;
 	object-fit: cover;
+	opacity: 0.5;
+}
+.project-images img:hover{
+	/* opacity: 1; */
+	opacity: 1;
+	transition: 0.7s ease-in;
+	z-index: 1;
+	transform: scale(1.4);
+	border : 2px solid black
+
 }
 .load-btn{
 	height: 45px;
@@ -416,6 +438,8 @@
 	margin-top: 40px;
 	background-color: #efefef;
 	border: none;
+	cursor: pointer;
+	/* padding-right: 20px; */
 	box-shadow: 0 2px 0 0 #ccc;
 	/* padding-top: 200px; */
 }
@@ -427,6 +451,7 @@
 
 .carousel-auto-container{
 	max-width: 1400px;
+	width: 100%;
 	/* position:relative; */
 	/* margin:auto; */
 	margin-top: -90px;
@@ -516,6 +541,7 @@
 }
 .social-icons{
 	height: 50px;
+	width: 100%;
 }
 i{
 	margin-left: 13px;
@@ -565,6 +591,7 @@ i{
 	font-size: 20px;
 }
 .apply-btn{
+	cursor: pointer;
 	background-color: #59A3FC;
 	height: 35px;
 	width: 110px;
@@ -574,6 +601,10 @@ i{
 	margin-left: 70px;
 	border-radius: 10px;
 	box-shadow: 0 3px 0 0 #ccc;
+}
+.apply-btn:hover{
+	color: #59A3FC;
+	background-color: #ccc;
 }
 .social-icons-big{
 	height: 270px;
@@ -594,8 +625,204 @@ i{
 	border: 2px solid transparent;
 	border-radius: 10px;
 	z-index: 1;
+
+}
+
+.contact-container{
+	height: 700px;
+	text-align: center;
+}
+.contact-head{
+	color: #7F8C8D;
+	font-size: 18px;
+	/* padding-top: 30px; */
+}
+.contact-head h1{
+	padding-left: 10px;
+}
+.contact-para{
+	padding-top: 20px;
+	color: #a1a1a1;
+	font-size: 20px;
+}
+
+.contact-info ul{
+	display: flex;
+	justify-content: center;
+	text-decoration: none;
+	padding: 20px;
+}
+.contact-info li{
+	display: block;
+	padding-left: 20px;
+	font-size: 20px;
+	
+}
+.form-fields{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+}
+.form-fields label{
+	left: 0;
+	margin-right: 200px;
+	color: #989898;
+	padding-bottom: 14px;
+	font-size: 20px;
+}
+.form-fields input{
+	/* padding-left: 80px; */
+	margin-left: 20px;
+	height: 35px;
+	width: 280px;
+	border :1px solid #ccc;
+	font-size: 20px;
+}
+
+.form-fields input:focus{
+	border:1px solid #59A3FC;
+	
+}
+
+.form-fields input  , label {
+	display: block;
 }
 
 
+.description{
+	margin-top: 30px;
+	padding-left: 200px;
+	margin-right: 310px;
+}
+.label-description{
+	color: #989898;
+	font-size: 20px;
+	/* padding-top: 14px; */
+	padding-right: 41rem;
+}
+.description-area{
+	float: left;
+	font-size: 15px;
+	width: 55.4rem;
+	margin-top: 10px;
+	margin-left: 7px;
+	border : 1px solid #ccc;
+}
+.contact-button{
+	display: absolute;
+	/* padding-top: 250px; */
+	float: right;
 	
+	padding-left: 40px;
+}
+.contact-button p{
+	float: left;
+	margin-top:40px;
+	margin-right: 1rem;
+	color: #989898;
+}
+.contact-button input{
+	margin-top: 20px;
+	margin-right: 11.7rem;
+	height: 50px;
+	width: 150px;
+	cursor: pointer;
+	background-color: #59A3FC;
+	color: white;
+	border:none;
+	font-weight: bold;
+	border-radius: 5px;
+	font-size: 14px;
+	box-shadow: 0 3px 0 0 #ccc;
+}
+.contact-button input:hover{
+	box-shadow: none;
+}
+.line{
+	background-image: url("./../images/line.png");
+	height: 13px;
+}
+.subscribe-container{
+	height: 350px;
+	background-color: #5C5C5C;
+	text-align: center;
+}
+.subscribe-container h1{
+   padding-top: 40px;
+   color: white;
+   font-style: normal;
+   font-weight: lighter;
 
+}
+.subscribe-container input{
+	margin: auto;
+	margin-top: 20px;
+}
+.plane{
+	color: #999;
+	position: absolute;
+	padding-left: 20px;
+	padding-top: 38px;
+	/* padding-bottom: 20px; */
+}
+.sub-email{
+	margin-top: 20px;
+	height: 50px;
+	width: 480px;
+	border-radius: 5px;
+	border: none;
+	padding-left: 55px;
+	color: black;
+    font-size: 18px;
+}
+.subscribe-container p{
+	color: #DAD9DA;
+}
+
+.subscribe-container .sub-p{
+	padding-top: 20px;
+}
+.subscribe-container .sub-p-2{
+	padding-top: 8px;
+}
+.subscribe-container button{
+	margin-top: 20px;
+	height: 45px;
+	width: 120px;
+	font-weight: bold;
+	font-size: 14px;
+	border-radius: 5px;
+	cursor: pointer;
+	color: white;
+	background-color: #84C15D;
+	border: none;
+	padding: 10px;
+	box-shadow: 0 3px 0 0 #717171;
+}
+
+.footer-container{
+
+
+	/* margin-top: 74px; */
+	/* height: 800px; */
+	height: 200px;
+	background-image:url("./../images/mainfooter.png") ;
+
+}
+.footer-container .footer-text{
+	text-align: center;
+	padding-top: 40px;
+	color: #a8a8a8;
+	/* margin-top: 20px; */
+}
+.footer-container .footer-text span{
+	font-weight: bold;
+	font-size: 18px;
+	color: white;
+	padding-left: 8px;
+}
+.find{
+	padding-top: 20px;
+	color:#84C15D;
+}
